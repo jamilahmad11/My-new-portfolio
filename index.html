@@ -1,83 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Title (Sabse Important) -->
-  <title>Jamil Ahmad | Frontend Developer Portfolio</title>
-  
-  <!-- Meta Description (Google ke liye summary) -->
-  <meta name="description" content="Hi, I'm Jamil Ahmad, a Frontend Developer. Explore my portfolio with projects in HTML, CSS, JavaScript, and React.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jamil Ahmad — Frontend Developer</title>
 
-  <!-- Meta Keywords -->
-  <meta name="keywords" content="Frontend Developer, Web Developer, React Developer, JavaScript, Portfolio, HTML, CSS, Jamil Ahmad">
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-  <!-- Author -->
-  <meta name="author" content="Jamil Ahmad">
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-  <!-- Open Graph (Social Media sharing ke liye) -->
-  <meta property="og:title" content="Jamil Ahmad | Frontend Developer Portfolio">
-  <meta property="og:description" content="Frontend Developer skilled in HTML, CSS, JavaScript, and React. Check out my portfolio projects.">
-  <meta property="og:image" content="https://jamilahmad11.github.io/My-new-portfolio/preview.png">
-  <meta property="og:url" content="https://jamilahmad11.github.io/My-new-portfolio/">
-  <meta property="og:type" content="website">
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  
-  <!-- Header Section -->
-  <header>
-    <h1>👋 Hi, I'm <span style="color:#007acc;">Jamil Ahmad</span></h1>
-    <h2>Frontend Developer</h2>
-    <p>I build responsive and user-friendly web applications using <strong>HTML, CSS, JavaScript, and React</strong>.</p>
-  </header>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo" data-aos="fade-right">Jamil<span>Dev</span></h1>
+            <nav data-aos="fade-left">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#welcome">Welcome</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>🚀 My Projects</h2>
-    <div class="project">
-      <h3>Todo App</h3>
-      <p>A simple task management app built with JavaScript.</p>
-      <img src="todo-app.png" alt="Todo App project by Jamil Ahmad">
-    </div>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>This portfolio website built with HTML, CSS, and JS.</p>
-      <img src="portfolio.png" alt="Portfolio project by Jamil Ahmad">
-    </div>
-  </section>
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="zoom-in">
+            <h2>Hello, I'm <span>Jamil Ahmad</span></h2>
+            <p>A Passionate Frontend Developer 🚀</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>💡 Skills</h2>
-    <ul>
-      <li>HTML5, CSS3, JavaScript (ES6+)</li>
-      <li>React.js (Hooks, Router, Redux basics)</li>
-      <li>Responsive Web Design</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 data-aos="fade-up">About Me</h2>
+            <p data-aos="fade-up" data-aos-delay="100">
+                I'm a frontend developer specializing in building modern, responsive, and user-friendly web
+                applications.
+            </p>
+            <div class="skills" data-aos="fade-up" data-aos-delay="150">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js</span><span>Git</span>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>📩 Contact Me</h2>
-    <p>Email: <a href="mailto:jamilahmad@example.com">jamilahmad@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/jamilahmad11" target="_blank">github.com/jamilahmad11</a></p>
-    <p>Portfolio: <a href="https://jamilahmad11.github.io/My-new-portfolio/" target="_blank">Visit My Portfolio</a></p>
-  </section>
+    <!-- Welcome Profile Section -->
+    <section id="welcome" class="section-alt">
+        <div class="container">
+            <h2 data-aos="fade-up">Welcome Jamil Ahmad Profile</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Click below to visit my GitHub profile 👇</p>
+            <button id="githubBtn" class="btn" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fa-brands fa-github"></i> Visit My GitHub
+            </button>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Jamil Ahmad | Frontend Developer</p>
-  </footer>
+    <!-- GitHub Projects -->
+    <section id="projects" class="section-alt">
+        <div class="container">
+            <h2 data-aos="fade-up">My GitHub Projects</h2>
+            <p class="sub" data-aos="fade-up" data-aos-delay="100">
+                Auto-fetched from GitHub. Click <em>Project Output</em> to see a live preview.
+            </p>
+            <div id="project-list" class="project-grid" data-aos="fade-up" data-aos-delay="150"></div>
+        </div>
+    </section>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 data-aos="fade-up">Contact Me</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Interested in working together? Let's connect!</p>
+            <div class="contact-info" data-aos="fade-up" data-aos-delay="150">
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:jamil.dev@gmail.com">jamiljj01970@gmail.com</a>
+                </p>
+                <p><i class="fa-solid fa-phone"></i> +92 302 4393827</p>
+                <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/jamil-ahmad-a1a408324/"
+                        target="_blank">LinkedIn</a></p>
+                <p><i class="fa-brands fa-github"></i> <a href="https://github.com/jamilahmad11"
+                        target="_blank">GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© <span id="year"></span> Thank you very much for viewing my profile..</p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- App JS -->
+    <script src="script.js"></script>
 </body>
+
 </html>
