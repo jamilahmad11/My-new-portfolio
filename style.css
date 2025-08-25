@@ -2,7 +2,7 @@
 * { box-sizing: border-box; }
 :root{
   --brand:#0a3d62;
-  --accent:#ff0000;
+  --accent: #00ffff;
   --text:#333;
   --muted:#666;
   --bg:#f8f9fa;
